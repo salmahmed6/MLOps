@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+ride_duration_ml_service.egg-info/PKG-INFO
+ride_duration_ml_service.egg-info/SOURCES.txt
+ride_duration_ml_service.egg-info/dependency_links.txt
+ride_duration_ml_service.egg-info/requires.txt
+ride_duration_ml_service.egg-info/top_level.txt
+src/__init__.py
+src/api.py
+src/model.py
+src/schemas.py
+tests/test_api.py
+tests/test_model.py

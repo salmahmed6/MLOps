@@ -1,0 +1,10 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      MODEL_PATH: /models/model.pkl
+      LOG_LEVEL: INFO
+    volumes:
+      - ./models:/models:ro
