@@ -1,10 +1,10 @@
-from src.logging_config import configure_logging
 from time import perf_counter
 from uuid import uuid4
 
 import structlog
 from fastapi import FastAPI
 
+from src.logging_config import configure_logging
 from src.schemas import (
     FeedbackRequest,
     PredictRequest,
@@ -49,9 +49,7 @@ async def predict(data: PredictRequest) -> PredictResponse:
         passengers=data.passengers,
     )
 
-    return PredictResponse(
-        duration_min=round(duration, 2)
-    )
+    return PredictResponse(duration_min=round(duration, 2))
 
 
 @app.post("/feedback")
