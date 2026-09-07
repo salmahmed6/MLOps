@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ride-duration-mlops"
+version = "0.2.0"
+description = "MLOps ride duration prediction service"
+requires-python = ">=3.10,<3.13"
+
+dependencies = [
+    "litestar",
+    "pydantic",
+    "scikit-learn",
+    "pandas",
+    "numpy",
+    "mlflow",
+    "joblib",
+    "wandb",
+    "dvc",
+    "boto3",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-cov",
+    "ruff",
+    "black",
+    "pre-commit",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B"]
+
+[tool.black]
+line-length = 88
+target-version = ["py311"]

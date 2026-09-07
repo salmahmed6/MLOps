@@ -1,0 +1,17 @@
+litestar
+pydantic
+scikit-learn
+pandas
+numpy
+mlflow
+joblib
+wandb
+dvc
+boto3
+
+[dev]
+pytest
+pytest-cov
+ruff
+black
+pre-commit

@@ -1,0 +1,21 @@
+Metadata-Version: 2.4
+Name: ride-duration-mlops
+Version: 0.2.0
+Summary: MLOps ride duration prediction service
+Requires-Python: <3.13,>=3.10
+Requires-Dist: litestar
+Requires-Dist: pydantic
+Requires-Dist: scikit-learn
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: mlflow
+Requires-Dist: joblib
+Requires-Dist: wandb
+Requires-Dist: dvc
+Requires-Dist: boto3
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: ruff; extra == "dev"
+Requires-Dist: black; extra == "dev"
+Requires-Dist: pre-commit; extra == "dev"
