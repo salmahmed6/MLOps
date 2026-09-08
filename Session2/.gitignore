@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment variables
+.env
+.env.*
+
+# IDE
+.vscode/
+.idea/
+
+# ML artifacts
+# MLflow
+mlflow.db
+mlflow.db-*
+mlruns/
+wandb/
+*.joblib
+
+# DVC
+.dvc/cache/
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+
+# OS
+.DS_Store
+Thumbs.db
